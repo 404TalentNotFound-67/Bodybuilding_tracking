@@ -28,6 +28,7 @@ class _BodybuildingTrackingAppState extends State<BodybuildingTrackingApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(title: const Text("Bodybuilding Tracking App")),
 
       body: _widgetOptions.elementAt(_selectedIndex),
