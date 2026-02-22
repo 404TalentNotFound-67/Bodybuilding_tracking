@@ -10,8 +10,7 @@ class BodybuildingTrackingApp extends StatefulWidget {
   const BodybuildingTrackingApp({super.key});
 
   @override
-  State<BodybuildingTrackingApp> createState() =>
-      _BodybuildingTrackingAppState();
+  State<BodybuildingTrackingApp> createState() => _BodybuildingTrackingAppState();
 }
 
 class _BodybuildingTrackingAppState extends State<BodybuildingTrackingApp> {
@@ -29,33 +28,32 @@ class _BodybuildingTrackingAppState extends State<BodybuildingTrackingApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      appBar: AppBar(title: const Text("Bodybuilding Tracking App")),
+      appBar: AppBar(
+        title: Text("Bodybuilding Tracking App", style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        centerTitle: true,
+      ),
 
       body: _widgetOptions.elementAt(_selectedIndex),
 
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.1),
-              blurRadius: 10,
-            ),
-          ],
+          color: Theme.of(context).colorScheme.surface,
+          boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 10)],
         ),
         child: SafeArea(
           child: Padding(
             padding: EdgeInsetsGeometry.symmetric(horizontal: 15, vertical: 15),
             child: GNav(
-              rippleColor: Colors.grey[300]!,
-              hoverColor: Colors.grey[100]!,
-              gap: 8,
-              activeColor: Colors.black,
+              rippleColor: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
+              hoverColor: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
+              gap: 6,
+              color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6),
+              activeColor: Theme.of(context).colorScheme.primary,
+              tabBackgroundColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
               iconSize: 24,
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: Duration(milliseconds: 400),
-              tabBackgroundColor: Colors.grey[200]!,
-              color: Colors.black,
               tabs: [
                 GButton(icon: Icons.dashboard, text: 'Dashboard'),
                 GButton(icon: Icons.restaurant, text: 'Ernährung'),
