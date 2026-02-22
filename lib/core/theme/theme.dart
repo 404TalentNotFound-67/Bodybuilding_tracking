@@ -6,17 +6,13 @@ ThemeData lightMode = ThemeData(
   colorScheme: ColorScheme.light(
     primary: const Color(0xFF1E88E5), // Fitness Blue
     secondary: const Color(0xFF26A69A), // Teal Accent
-    surface: Colors.white,
-    //background: const Color(0xFFF5F7FA),
+    surface: Colors.grey.shade300,
     onPrimary: Colors.white,
     onSurface: Colors.black,
+    surfaceContainer: Colors.grey.shade200,
   ),
   scaffoldBackgroundColor: const Color(0xFFF5F7FA),
-  appBarTheme: const AppBarTheme(
-    elevation: 0,
-    backgroundColor: Color(0xFF1E88E5),
-    foregroundColor: Colors.white,
-  ),
+  appBarTheme: AppBarTheme(elevation: 0, backgroundColor: Colors.grey.shade300, foregroundColor: Colors.black),
 );
 
 /// 🔹 DARK MODE
@@ -26,14 +22,11 @@ ThemeData darkMode = ThemeData(
     primary: const Color(0xFF1565C0),
     secondary: const Color(0xFF26A69A),
     surface: const Color(0xFF121212),
-    //background: const Color(0xFF1E1E1E),
     onPrimary: Colors.white,
     onSurface: Colors.white,
+    surfaceContainer: const Color(0xFF1E1E1E),
   ),
   scaffoldBackgroundColor: const Color(0xFF1E1E1E),
-  appBarTheme: const AppBarTheme(
-    elevation: 0,
-    backgroundColor: Color(0xFF1565C0),
-    foregroundColor: Colors.white,
-  ),
+
+  appBarTheme: const AppBarTheme(elevation: 0, backgroundColor: Color(0xFF121212), foregroundColor: Colors.white),
 );

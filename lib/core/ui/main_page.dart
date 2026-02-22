@@ -28,11 +28,7 @@ class _BodybuildingTrackingAppState extends State<BodybuildingTrackingApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      appBar: AppBar(
-        title: Text("Bodybuilding Tracking App", style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
-        backgroundColor: Theme.of(context).colorScheme.surface,
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: Text("Bodybuilding Tracking App"), centerTitle: true),
 
       body: _widgetOptions.elementAt(_selectedIndex),
 
