@@ -1,4 +1,4 @@
-import 'package:bodybuilding_tracking/core/widgets/body_weight._container.dart';
+import 'package:bodybuilding_tracking/features/weight/view/body_weight._container.dart';
 import 'package:flutter/material.dart';
 
 class DashboardPage extends StatelessWidget {

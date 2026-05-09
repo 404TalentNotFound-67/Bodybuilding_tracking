@@ -1,4 +1,4 @@
-import 'package:bodybuilding_tracking/data/weight.dart';
+import 'package:bodybuilding_tracking/features/weight/data/weight.dart';
 import 'package:bodybuilding_tracking/hive_registrar.g.dart';
 import 'package:hive_ce_flutter/adapters.dart';
 

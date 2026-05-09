@@ -13,13 +13,8 @@ class WeightEntryAdapter extends TypeAdapter<WeightEntry> {
   @override
   WeightEntry read(BinaryReader reader) {
     final numOfFields = reader.readByte();
-    final fields = <int, dynamic>{
-      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
-    };
-    return WeightEntry(
-      date: fields[0] as DateTime,
-      weight: (fields[1] as num).toDouble(),
-    );
+    final fields = <int, dynamic>{for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read()};
+    return WeightEntry(date: fields[0] as DateTime, weight: (fields[1] as num).toDouble());
   }
 
   @override
@@ -38,7 +33,5 @@ class WeightEntryAdapter extends TypeAdapter<WeightEntry> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is WeightEntryAdapter &&
-          runtimeType == other.runtimeType &&
-          typeId == other.typeId;
+      other is WeightEntryAdapter && runtimeType == other.runtimeType && typeId == other.typeId;
 }

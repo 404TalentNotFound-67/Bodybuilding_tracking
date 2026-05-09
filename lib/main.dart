@@ -1,6 +1,6 @@
 import 'package:bodybuilding_tracking/core/theme/theme_provider.dart';
 import 'package:bodybuilding_tracking/core/ui/main_page.dart';
-import 'package:bodybuilding_tracking/data/persistence/hive_service.dart';
+import 'package:bodybuilding_tracking/persistence/hive_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
