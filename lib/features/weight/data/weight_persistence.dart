@@ -1,4 +1,4 @@
-import 'package:bodybuilding_tracking/features/weight/data/weight.dart';
+import 'package:bodybuilding_tracking/features/weight/model/weight.dart';
 import 'package:hive_ce_flutter/hive_flutter.dart';
 
 class WeightRepository {

@@ -1,5 +1,5 @@
 import 'package:bodybuilding_tracking/features/weight/data/weight_persistence.dart';
-import 'package:bodybuilding_tracking/features/weight/data/weight.dart';
+import 'package:bodybuilding_tracking/features/weight/model/weight.dart';
 import 'package:flutter/material.dart';
 
 class BodyWeightContainer extends StatelessWidget {

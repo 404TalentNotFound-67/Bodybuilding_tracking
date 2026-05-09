@@ -3,7 +3,7 @@
 // Check in to version control
 
 import 'package:hive_ce/hive_ce.dart';
-import 'package:bodybuilding_tracking/features/weight/data/weight.dart';
+import 'package:bodybuilding_tracking/features/weight/model/weight.dart';
 
 extension HiveRegistrar on HiveInterface {
   void registerAdapters() {
