@@ -60,7 +60,7 @@ class _AddBodyWeightEntryPageState extends State<AddBodyWeightEntryPage> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Gewichtseintrag erfolgreich hinzugefügt!'), duration: Duration(seconds: 2)),
           );
-          Navigator.pop(context, true);
+          Navigator.pop(context);
         }
       } catch (e) {
         if (mounted) {

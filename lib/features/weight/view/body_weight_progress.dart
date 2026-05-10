@@ -26,7 +26,6 @@ class _BodyWeightProgressState extends State<BodyWeightProgress> {
             child: IconButton(
               onPressed: () async {
                 Navigator.push(context, MaterialPageRoute(builder: (_) => const AddBodyWeightEntryPage()));
-                // Aktualisiere die Liste nach dem Hinzufügen eines Eintrags
               },
               icon: const Icon(Icons.add),
             ),
